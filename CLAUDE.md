@@ -21,15 +21,17 @@ scratch each session.
 
 ## Structure — hold the twelve weeks together
 
-Four stages, and every week's content should visibly build on the one before
-rather than reading as a standalone topic:
+Per `course-proposal.md`'s addendum (§12), which supersedes its original §4/§7:
+four three-week blocks, each closing with the assessment due that week — every
+week's content should visibly build on the one before, and each block should
+point forward to the assessment it's building toward.
 
-| Stage | Weeks | Question |
-|---|---|---|
-| I. Seeing Bad Design | 1–3 | What makes something hateable? |
-| II. Building Bad Design | 4–7 | How can we deliberately create it? |
-| III. Breaking Bad Design | 8–10 | How do we test and understand it? |
-| IV. Becoming the Designer | 11–12 | Can we design, defend, and redesign it? |
+| Stage | Weeks | Question | Closes with |
+|---|---|---|---|
+| I. Observe | 1–3 | What makes something hateable? | Assessment 1 — Hate Catalogue (15%, due wk 3) |
+| II. Create | 4–6 | Can I deliberately make it worse? | Assessment 2 — The Worst Interface (25%, due wk 6) |
+| III. Test | 7–9 | Does my bad design actually work? | Assessment 3 — Hostile Design Experiment (20%, due wk 9) |
+| IV. Question + Redesign | 10–12 | Is it actually bad, and can I do better? | Final — The Redemption Project (40%, due wk 12) |
 
 The through-line, one clause per week, is: I hate this → who designed it this
 way → why does it work on people → what techniques are being used → can I
@@ -40,25 +42,34 @@ bad design actually work → is bad design always bad → can I fix it → what 
 builds on, the way the proposal's "Builds From" sections do — don't let a week
 stand alone.
 
-Per-week theme, activity and key question are all specified in the proposal
-document; pull each week's content from there rather than inventing new topics,
-and preserve the specific activities named (Hate Wall, Follow the Incentive,
-Make Me Click It, Dark Pattern Bingo, Friction Mapping, Hostile Object Safari,
-The Maze, Human Guinea Pigs, The Defence, The Redesign Review, The Worst Design
-Awards).
+Weeks 10–12 are the final project's own workshop, not new unrelated material:
+week 10 (renamed "Is Bad Design Actually Bad?") has students defend a hated
+design, week 11 develops and critiques their redesign, and week 12's "Worst
+Design Awards" doubles as final presentations of the Redemption Project. Point
+these three weeks explicitly at the final assessment rather than treating them
+as standalone topics.
+
+Per-week theme, activity and key question are otherwise as specified in the
+proposal document; pull each week's content from there rather than inventing
+new topics, and preserve the specific activities named (Hate Wall, Follow the
+Incentive, Make Me Click It, Dark Pattern Bingo, Friction Mapping, Hostile
+Object Safari, The Maze, Human Guinea Pigs, The Defence, The Redesign Review,
+The Worst Design Awards).
 
 ## Assessment structure (must sum to 100 — `spec/assignment-2.test.ts` checks this)
 
-| Assessment | Weight | Roughly when |
-|---|---:|---|
-| Hate Catalogue | 15% | collected across weeks 1–4 |
-| The Worst Interface | 25% | week 5 |
-| Hostile Design Experiment | 20% | week 9 |
-| The Redemption Project (final) | 40% | week 11–12 |
+Each assessment has one explicit due week, since the site models it as a
+discrete `assessments` entry:
 
-Model these as this site's `assessments` collection entries — they are the
-fictional course's own assessments, distinct from COMP4020's Assignment 2
-itself.
+| Assessment | Due | Weight | Purpose |
+|---|---:|---:|---|
+| Hate Catalogue | week 3 | 15% | learn to observe and analyse bad design |
+| The Worst Interface | week 6 | 25% | deliberately create bad design |
+| Hostile Design Experiment | week 9 | 20% | test whether the bad design actually works |
+| The Redemption Project (final) | week 12 | 40% | analyse, defend, test and redesign a real system |
+
+These are the fictional course's own assessments, distinct from COMP4020's
+Assignment 2 itself.
 
 ## Voice
 

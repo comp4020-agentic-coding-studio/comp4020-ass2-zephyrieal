@@ -891,3 +891,39 @@ The result is a course that sounds ridiculous at first, but becomes increasingly
 # 11. One-Sentence Course Pitch
 
 > **Designing Things People Hate teaches students how interfaces, objects, and systems manipulate human behaviour — by making them deliberately terrible, testing just how terrible they can become, and eventually learning how to fix them.**
+
+---
+
+# 12. Addendum — explicit assessment weeks
+
+Each assessment needs one explicit due week, since the site models assessments
+as discrete entries with a fixed `week`. This regroups the semester into four
+three-week blocks, each closing with the assessment it built toward:
+
+| Assessment | Due | Weight | Purpose |
+|---|---:|---:|---|
+| Hate Catalogue | Week 3 | 15% | learn to observe and analyse bad design |
+| The Worst Interface | Week 6 | 25% | deliberately create bad design |
+| Hostile Design Experiment | Week 9 | 20% | test whether the bad design actually works |
+| The Redemption Project (final) | Week 12 | 40% | analyse, defend, test and redesign a real system |
+
+```text
+Weeks 1–3   OBSERVE     "What makes this bad?"           → Assessment 1
+Weeks 4–6   CREATE      "Can I make something worse?"    → Assessment 2
+Weeks 7–9   TEST        "Does my bad design work?"        → Assessment 3
+Weeks 10–12 QUESTION +  "Is it actually bad, and can I     → Final Assessment
+            REDESIGN     do better?"
+```
+
+This supersedes the four-stage table in Section 4 and the "roughly when" of
+Section 7's assessments; the weekly themes and activities in Section 5 are
+unchanged, except for Weeks 10–12, which become the Redemption Project's own
+workshop rather than new unrelated material:
+
+- **Week 10 — Is Bad Design Actually Bad?** (was "When Bad Design Is Good
+  Design"): students defend a hated design and identify legitimate reasons for
+  frustrating design.
+- **Week 11 — Fix It Without Breaking It**: students develop and critique
+  their redesign (unchanged theme, now explicitly the final project's draft).
+- **Week 12 — The Worst Design Awards**: final presentations double as the
+  Redemption Project's presentation.
