@@ -1,36 +1,39 @@
 ---
-title: First review
+title: Follow the Incentive
 description:
-  The second session, where work made in week 1 meets an audience for the first
-  time
+  The Hate Wall meets its first question — not what you hate, but who the
+  system was actually built for
 week: 2
 date: 2027-03-01
 teachers:
   - idris-fenn
 spec:
-  - work from week 1 is running and can be shown in under two minutes
-  - you can name the one decision you are least sure about
+  - you can name, for your week-1 example, at least one person or
+    organisation the design works well for
+  - you can state in one sentence why that difficulty might be deliberate
+    rather than accidental
+  - you have revised your Hate Catalogue entry to include this stakeholder
 related:
-  - assessments/assignment-1
+  - assessments/hate-catalogue
 ---
-
-<!-- STARTER_CONTENT: replace this session, then remove this comment. -->
-
-Replace this page. It is here so the sessions listing sorts by week, the detail
-route renders a second spec, and the related block has an edge into the
-assessment collection.
 
 ## Before the session
 
-Bring the work from week 1 and the one decision you are least sure about.
+Bring the entry you added to the Hate Catalogue in week 1, plus a guess: who
+benefits from this being difficult?
 
 ## In the session
 
-Short demos, then feedback aimed at the decision rather than the polish. What
-makes a review worth attending is that the feedback changes what someone does
-next, so build in the time to act on it.
+For each example, the class works through Follow the Incentive: user goals,
+designer goals, business goals, institutional goals and technical constraints,
+teased apart one at a time. A cancellation flow that takes fifteen minutes is
+terrible for the person cancelling and excellent for whoever is measuring
+churn — the same fifteen minutes, two completely different verdicts depending
+on whose interest you ask about.
 
 ## Afterwards
 
-If attendance or participation is worth marks, say so here and link the rule to
-the [assessment page](/assessments/) rather than restating it.
+Update your Hate Catalogue entry with a stakeholder and a suspected intention
+— both fields the brief for [Assessment 1](/assessments/hate-catalogue/) asks
+for. Week 1 taught you what you hate; this session is about learning to ask
+why it exists.

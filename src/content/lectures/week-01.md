@@ -1,8 +1,8 @@
 ---
-title: Opening lecture
+title: What Makes You Hate Something?
 description:
-  The first lecture — what the course is, why it is shaped this way, and what
-  happens in week 1
+  The opening lecture — why "ugly" and "badly designed" are not the same
+  claim, and what the semester is going to do about that
 week: 1
 date: 2027-02-22
 teachers:
@@ -12,19 +12,20 @@ related:
   - sessions/01-getting-started
 ---
 
-<!-- STARTER_CONTENT: replace this lecture, then remove this comment. -->
-
-Replace this page. A lecture entry says what was covered and links to the pages
-that own the detail, so the lecture stays short and nothing is explained twice.
-
-The `related:` ref above is a graph edge: it renders on this page and on the
-session's, so declare a connection once, on whichever side is convenient.
-
-The page renders its `slides:` link automatically. Decks are markdown too,
-under `src/decks/`; the path is part of the lecture's API metadata.
+Designing Things People Hate starts from a deliberately provocative title and
+a much less provocative question: if good design makes people's lives easier,
+what makes bad design so effective at making them worse? The instinct is to
+answer with aesthetics — ugly buttons, garish colour, confusing icons — and
+this course spends its first three weeks talking students out of that
+instinct. A truly effective bad design is often popular, functional, even
+good-looking; it's bad because of what it makes you do, not how it looks
+doing it.
 
 ## Outline
 
-- what the course is for
-- how the weeks are shaped
-- what to do before the first session
+- why the course's real subject is behaviour, not appearance
+- Notice → Explain → Manipulate → Break → Measure → Design → Defend →
+  Redesign — the shape of the whole semester
+- what the Hate Wall does with today's submissions, and how it becomes the
+  Hate Catalogue
+- what to have ready before [the first session](/sessions/01-getting-started/)

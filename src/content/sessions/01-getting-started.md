@@ -1,36 +1,38 @@
 ---
-title: Getting started
+title: The Hate Wall
 description:
-  The first session of the semester — what to have working before you arrive,
-  and what happens once you do
+  The first session — a quick orientation, then the class's first pass at
+  naming what actually makes something hateable
 week: 1
 date: 2027-02-22
 teachers:
   - marisol-quaye
 spec:
-  - your development environment runs the course's toolchain
-  - you can build and preview the site locally
-  - you have something, however rough, to show the class
+  - you arrive with one thing you already hate using, named specifically
+    enough that a stranger could recognise it
+  - you can point to the exact moment that thing turns from fine to
+    frustrating
+  - your example is added to the class's shared Hate Catalogue by the end of
+    the session
 ---
-
-<!-- STARTER_CONTENT: replace this session, then remove this comment. -->
-
-Replace this page. A session brief tells a student three things: what to bring,
-what will happen, and how to tell afterwards whether it went well.
 
 ## Before the session
 
-The `spec` above is the contract. Write each line so a reader can tell whether
-it has been met without asking you --- that is the difference between a spec and
-a wish.
+Bring one example: something ordinary you use regularly and hate — a ticket
+machine, a subscription, a printer, a self-checkout, a door that lies about
+which way it opens. Ugly doesn't count on its own; you need the moment it goes
+wrong for you.
 
 ## In the session
 
-Say how the time is actually spent, in the order it happens. If the session runs
-to a repeating shape --- a demo, then feedback, then work time --- name the
-parts and say roughly how long each takes. Students plan against it.
+A short orientation first — the toolchain, the site, how the semester is
+graded — then straight into the Hate Wall: each student names their example
+and the exact point where it turns from fine to frustrating. The class sorts
+submissions by what the user experiences, not yet by why it happens; that
+question waits for [week 2](/sessions/02-first-review/).
 
 ## Afterwards
 
-Say what leaves the session: a mark, a piece of feedback, a decision about the
-next week's work.
+Every submission joins the semester's shared Hate Catalogue, which becomes
+the dataset [Assessment 1](/assessments/hate-catalogue/) draws on. Keep your
+example in mind — you'll come back to it before that's due in week 3.
