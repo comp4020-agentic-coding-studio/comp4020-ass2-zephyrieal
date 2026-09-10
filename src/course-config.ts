@@ -40,13 +40,9 @@ export const slopCourseMetaSchema = z
 
 // The single source of truth for the course record. The generated homepage,
 // navigation label and /api/index.json all read this object.
-// Replace every placeholder value, but keep the shape: the catalogue ingests
-// this API contract when the course is published.
 //
-// The code's last three digits were assigned to this repo when it was
-// provisioned, and no other course in the cohort has them. Change the first
-// digit to your course's level (and `level` to match); keep the other three.
-// STARTER_CONTENT: replace this course record, then remove this comment.
+// The code's last three digits (308) were assigned to this repo when it was
+// provisioned; the leading digit is the level (3 = undergraduate).
 export const courseMeta = slopCourseMetaSchema.parse({
   code: "SLOP3308",
   title: "Designing Things People Hate",

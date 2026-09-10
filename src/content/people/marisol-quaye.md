@@ -11,11 +11,15 @@ photo: ./marisol-quaye.avif
 photoAlt: A stylised portrait of a person in three-quarter view, flat gold and black shapes on warm cream, in a two-ink risograph print
 ---
 
-<!-- STARTER_CONTENT: replace this person entry, then remove this comment. -->
+Marisol designed Designing Things People Hate after a decade split between
+usability consulting and building the exact dark-pattern checkout flows the
+course now spends twelve weeks taking apart. She wrote the through-line — hate
+it, explain it, manipulate with it, build it, test it, then defend a version
+that's actually better — and teaches every lecture herself so the argument
+stays in one voice from week 1 to the Worst Design Awards.
 
-Replace this entry. A people page carries a short bio and whatever a student
-needs in order to contact the right person for the right thing --- and nothing
-that will be stale by week 3.
-
-Consultation hours, contact preferences and the escalation path (who to ask
-first, who to ask when that does not work) are the parts students actually read.
+Office hours run Tuesdays 2–4pm in the School of Invented Disciplines, no
+booking needed. Email is for anything that can't wait until the next session —
+extension requests, access needs, or a Hate Wall example you're not sure
+counts. Questions about a specific piece of feedback go to the tutor who
+marked it first; if that doesn't resolve it, escalate to Marisol.
