@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
 import courseGraph from "astro-course-university";
 import universityTheme from "astro-theme-university";
 import { astromotion, deckRemarkPlugins } from "astromotion";
@@ -17,12 +17,31 @@ export default defineConfig({
   // and what a visitor clicks in agreement --- otherwise each click costs a
   // 301 on GitHub Pages.
   trailingSlash: "always",
+  // The theme registers Public Sans (body/headings) and Roboto Mono (code) --
+  // see astro-theme-slop/slop.css for the colour side of the brand. This is
+  // the one typeface this course's own design adds: a genuine typewriter face,
+  // used only for the site's "typed paperwork" motif (file numbers, section
+  // marks) -- never for running headings or body copy.
+  fonts: [
+    {
+      name: "Special Elite",
+      cssVariable: "--font-special-elite",
+      provider: fontProviders.google(),
+      weights: ["400"],
+      styles: ["normal"],
+      fallbacks: ["monospace"],
+    },
+  ],
   integrations: [
     universityTheme({
       defaultLayout: "src/layouts/PageLayout.astro",
       // The whole brand choice: three colour tokens and a set of lockups. Keep
       // institutional brand packages and assets out of this fictional site.
-      brandCss: "astro-theme-slop/slop.css",
+      // This course's own design layers on top, in src/styles/site.css, so it
+      // reaches every page regardless of layout (see README on PageLayout.astro
+      // vs. this: hand-written .astro pages under src/pages render
+      // ContentLayout directly and never pass through PageLayout).
+      brandCss: ["astro-theme-slop/slop.css", "/src/styles/site.css"],
       imageFormat: "avif",
       llmsTxt: true,
       // The theme owns the markdown plugin chain, so astromotion's slide

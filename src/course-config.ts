@@ -48,15 +48,16 @@ export const slopCourseMetaSchema = z
 // digit to your course's level (and `level` to match); keep the other three.
 // STARTER_CONTENT: replace this course record, then remove this comment.
 export const courseMeta = slopCourseMetaSchema.parse({
-  code: "SLOP1308",
-  title: "Course Title Goes Here",
+  code: "SLOP3308",
+  title: "Designing Things People Hate",
   session: "Semester 1",
   year: 2027,
-  level: 1,
+  level: 3,
   startDate: "2027-02-22",
   endDate: "2027-05-28",
   description:
-    "One concise paragraph explaining what this course is, who it is for, " +
-    "and why somebody would choose to spend a semester taking it.",
-  tags: ["replace me"],
+    "Interfaces, objects and systems shape behaviour on purpose. This course " +
+    "teaches you to read that design, build it deliberately badly, test " +
+    "whether the bad version actually works, then fix it.",
+  tags: ["HCI", "dark patterns", "UX research"],
 }) satisfies CourseMetaInput;

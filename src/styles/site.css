@@ -1,0 +1,80 @@
+/* SLOP3308 "Designing Things People Hate" -- site-wide design on top of the
+   theme's derived tokens (astro-theme-slop/slop.css) and the extra typewriter
+   face registered in astro.config.ts. The concept: the site is dressed as the
+   paperwork of an institution that hates you back -- a notice, a claim form,
+   a warranty card -- not as "hacker" dark-UI theatre. See CLAUDE.md. */
+
+:root {
+  --at-font-typewriter: var(--font-special-elite, "Courier New", monospace);
+}
+
+/* The typed-paperwork motif: file numbers, section marks, claim references.
+   Used sparingly and only where the content really is that kind of mark --
+   never as a generic small-caps label. */
+.at-plate {
+  font-family: var(--at-font-typewriter);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+
+/* A disclosure box: the "THIS COURSE WILL" callout on the homepage, and
+   anywhere else a page needs to set off an actual notice rather than decorate
+   a paragraph. Double rule reads as an official document, not a card. */
+.at-notice-box {
+  border-top: 3px double var(--at-primary);
+  border-bottom: 3px double var(--at-primary);
+  padding-block: var(--at-spacing-md);
+  margin-block: var(--at-spacing-lg);
+}
+
+.at-notice-box > :first-child {
+  margin-block-start: 0;
+}
+
+.at-notice-box > :last-child {
+  margin-block-end: 0;
+}
+
+/* A schedule of terms: the four teaching blocks, presented as ledger rows
+   rather than a rounded card grid. Only used where the content is a genuine
+   ordered sequence (it is: four chronological blocks of the semester). */
+.at-ledger {
+  border-top: 1px solid var(--at-divider);
+  margin-block: var(--at-spacing-lg);
+}
+
+.at-ledger-row {
+  display: grid;
+  grid-template-columns: 3rem 6rem 1fr;
+  gap: var(--at-spacing-md);
+  padding-block: var(--at-spacing-md);
+  border-bottom: 1px solid var(--at-divider);
+  align-items: baseline;
+}
+
+.at-ledger-row > .at-ledger-numeral {
+  font-family: var(--at-font-typewriter);
+  color: var(--at-primary);
+}
+
+.at-ledger-row > .at-ledger-weeks {
+  color: var(--at-text-secondary);
+  font-size: 0.9rem;
+}
+
+.at-ledger-row h3 {
+  margin-block: 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+.at-ledger-row p {
+  margin-block: 0;
+  color: var(--at-text-secondary);
+}
+
+@media (max-width: 40rem) {
+  .at-ledger-row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}

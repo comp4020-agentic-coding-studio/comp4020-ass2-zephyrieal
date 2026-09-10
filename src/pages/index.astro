@@ -1,38 +1,114 @@
 ---
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
-import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
-import heroImage from "../assets/images/hero-home.avif";
+import BaseLayout from "astro-theme-university/layouts/BaseLayout.astro";
+import { withBase } from "astro-theme-university/url";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
 
-// STARTER_CONTENT: replace the hero artwork and its alt text below, then
-// remove this comment.
+const stages = [
+  {
+    numeral: "I",
+    weeks: "Weeks 1–3",
+    name: "Observe",
+    question: "What makes something hateable?",
+    closes: "Assessment 1, Hate Catalogue — due week 3",
+  },
+  {
+    numeral: "II",
+    weeks: "Weeks 4–6",
+    name: "Create",
+    question: "Can I deliberately make it worse?",
+    closes: "Assessment 2, The Worst Interface — due week 6",
+  },
+  {
+    numeral: "III",
+    weeks: "Weeks 7–9",
+    name: "Test",
+    question: "Does my bad design actually work?",
+    closes: "Assessment 3, Hostile Design Experiment — due week 9",
+  },
+  {
+    numeral: "IV",
+    weeks: "Weeks 10–12",
+    name: "Question + Redesign",
+    question: "Is it actually bad, and can I do better?",
+    closes: "Final, The Redemption Project — due week 12",
+  },
+];
 ---
 
-<ContentLayout
+<BaseLayout
   title={`${courseMeta.code}: ${courseMeta.title}`}
   description={courseMeta.description}
-  heroImage={heroImage}
-  heroImageAlt="A lecture theatre reduced to flat gold and black shapes, rows of seats sweeping past the frame, in a two-ink risograph print"
   {...siteConfig}
 >
-  <ul class="course-tags" aria-label="Course tags">
-    {courseMeta.tags.map((tag) => <li>{tag}</li>)}
-  </ul>
+  <header class="notice" slot="hero">
+    <div class="notice-plate">
+      <span class="at-plate">Slop University</span>
+      <span class="at-plate notice-file">File No. {courseMeta.code}</span>
+    </div>
+    <p class="notice-kicker">Notice of Enrolment</p>
+    <h1>{courseMeta.title}</h1>
+    <p class="notice-lede">{courseMeta.description}</p>
+    <ul class="notice-tags" aria-label="Course tags">
+      {courseMeta.tags.map((tag, i) => (
+        <>
+          {i > 0 && <li aria-hidden="true" class="notice-tag-sep">·</li>}
+          <li>{tag}</li>
+        </>
+      ))}
+    </ul>
 
-  <!-- STARTER_CONTENT: replace the authored page below, then remove this comment. -->
+    <div class="at-notice-box">
+      <p><strong>This course will</strong> teach you to build interfaces that make
+      people do what you want — and how to tell, from the inside, when one is
+      doing it to you.</p>
+    </div>
+
+    <div class="enter-course" data-enter-course>
+      <a href={withBase("/sessions/")} class="enter-course-link" data-enter-course-link>
+        Enter Course
+      </a>
+      <p class="visually-hidden">
+        This button moves away from the pointer. Tab to it and press Enter to
+        activate it without chasing it.
+      </p>
+    </div>
+  </header>
+
   <h2>What you will do</h2>
   <p>
-    Say what a student spends their time on — the making, reading, arguing or
-    measuring that fills the weeks. Name the artefact they walk out with.
+    Every week you take something people already hate — a form, a checkout, a
+    queue, a subscription flow — and work out why it works on them. Then you
+    build your own version, deliberately: a catalogue of hateable design, an
+    interface engineered to frustrate, an experiment that tests whether your
+    hostility actually lands. By week 12 you take one you built or found and
+    redeem it, with the receipts to say what changed and why.
   </p>
 
   <h2>Who it is for</h2>
   <p>
-    Say who this is aimed at and what they need to already know. Be specific
-    enough that someone can rule themselves in or out without emailing you.
+    Third-year students with some HCI or interaction-design grounding who want
+    to understand manipulation by building it, not just naming it. You should
+    already be comfortable prototyping an interface end to end; this course
+    spends its time on why the interface behaves the way it does, not on how to
+    wire one up.
   </p>
+
+  <h2>How the semester holds together</h2>
+  <div class="at-ledger">
+    {stages.map((stage) => (
+      <div class="at-ledger-row">
+        <span class="at-ledger-numeral">{stage.numeral}</span>
+        <span class="at-ledger-weeks">{stage.weeks}</span>
+        <div>
+          <h3>{stage.name} — {stage.question}</h3>
+          <p>{stage.closes}</p>
+        </div>
+      </div>
+    ))}
+  </div>
 
   <h2>Where to go next</h2>
   <CardGrid columns={2}>
@@ -46,23 +122,132 @@ import { sessionLabels, siteConfig } from "../site-config";
       <p>Who teaches the course and how to reach them.</p>
     </Card>
   </CardGrid>
-</ContentLayout>
+</BaseLayout>
 
 <style>
-  .course-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-block: 0 2rem;
-    padding: 0;
-    list-style: none;
+  .notice {
+    max-width: 42rem;
+    margin-inline: auto;
+    padding-inline: var(--at-spacing-lg);
+    padding-block: var(--at-spacing-xl) var(--at-spacing-lg);
+    text-align: left;
   }
 
-  .course-tags li {
-    padding: 0.25rem 0.65rem;
-    border-radius: 999px;
+  .notice-plate {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--at-spacing-md);
+    padding-block-end: var(--at-spacing-sm);
+    border-bottom: 3px double var(--at-primary);
+    color: var(--at-secondary);
+  }
+
+  .notice-file {
     color: var(--at-text-secondary);
-    background: var(--at-bg-alt);
+  }
+
+  .notice-kicker {
+    margin-block: var(--at-spacing-md) 0;
+    color: var(--at-text-secondary);
     font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .notice h1 {
+    margin-block: 0.25rem var(--at-spacing-sm);
+  }
+
+  .notice-lede {
+    max-width: 38ch;
+    color: var(--at-text-secondary);
+  }
+
+  .notice-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-block: var(--at-spacing-sm) 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.9rem;
+    color: var(--at-text-secondary);
+  }
+
+  .notice-tag-sep {
+    color: var(--at-divider);
+  }
+
+  .enter-course {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    min-height: 4.5rem;
+    margin-block-start: var(--at-spacing-lg);
+  }
+
+  .enter-course-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--at-primary);
+    background: var(--at-primary);
+    color: var(--at-on-primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.15s ease-out;
+    will-change: transform;
+  }
+
+  .enter-course-link:hover,
+  .enter-course-link:focus-visible {
+    background: var(--at-secondary);
+    border-color: var(--at-secondary);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .enter-course-link {
+      transition: none;
+    }
   }
 </style>
+
+<script>
+  const container = document.querySelector<HTMLElement>("[data-enter-course]");
+  const link = document.querySelector<HTMLAnchorElement>("[data-enter-course-link]");
+  const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (container && link && !reduceMotion) {
+    const threshold = 140;
+    const maxPush = 90;
+    let offsetX = 0;
+    let offsetY = 0;
+
+    // Listens window-wide, not just over the button, so it reads as fleeing
+    // the approach rather than only reacting once the pointer already arrives.
+    const flee = (event: PointerEvent) => {
+      const rect = link.getBoundingClientRect();
+      const cx = rect.left + rect.width / 2 - offsetX;
+      const cy = rect.top + rect.height / 2 - offsetY;
+      const dx = cx - event.clientX;
+      const dy = cy - event.clientY;
+      const distance = Math.hypot(dx, dy);
+      if (distance < threshold) {
+        const push = Math.min((threshold - distance) * 1.2, maxPush);
+        const angle = Math.atan2(dy, dx);
+        offsetX = Math.cos(angle) * push;
+        offsetY = Math.sin(angle) * push;
+        link.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+      }
+    };
+
+    window.addEventListener("pointermove", flee);
+    // Keyboard users get a stable target: focusing it resets any offset so
+    // Tab-then-Enter always lands on the button, never on wherever it fled to.
+    link.addEventListener("focus", () => {
+      offsetX = 0;
+      offsetY = 0;
+      link.style.transform = "none";
+    });
+  }
+</script>
