@@ -3,9 +3,12 @@
 The platform under you is fixed and documented in `README.md`; this deliverable's
 brief and spec live on the
 [course website](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/).
-Below is this course's own design, decided in `course-proposal.md`. Treat it as
-the source of truth for course content; don't re-derive the curriculum from
-scratch each session.
+Below is this course's own design, decided in `course-proposal.md` and refined
+by the later weekly pass in `weekly-course-design.md` (§13 of the proposal
+records exactly what that pass changed — mostly activity names and their
+specific shape, not the underlying weekly themes). Treat both as the source of
+truth for course content, with the weekly design winning on anything the two
+disagree about; don't re-derive the curriculum from scratch each session.
 
 ## Course identity
 
@@ -52,9 +55,11 @@ as standalone topics.
 Per-week theme, activity and key question are otherwise as specified in the
 proposal document; pull each week's content from there rather than inventing
 new topics, and preserve the specific activities named (Hate Wall, Follow the
-Incentive, Make Me Click It, Dark Pattern Bingo, Friction Mapping, Hostile
-Object Safari, The Maze, Human Guinea Pigs, The Defence, The Redesign Review,
-The Worst Design Awards).
+Incentive, Make Me Click It, Dark Pattern Detective, Bad Design Studio,
+Friction Lab, Hostile Object Safari, The Maze, Human Guinea Pigs, Defend the
+Indefensible, Redemption Studio, The Worst Design Awards) — these are the
+`weekly-course-design.md` names; see the proposal's §13 for what changed from
+its original Section 5.
 
 ## Assessment structure (must sum to 100 — `spec/assignment-2.test.ts` checks this)
 
