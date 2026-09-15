@@ -22,7 +22,7 @@ spec:
   - every design decision is tied to a stated mechanism, not just labelled
     "annoying"
 related:
-  - sessions/06-friction-mapping
+  - sessions/06-friction-lab
   - assessments/hostile-design-experiment
 ---
 

@@ -25,17 +25,19 @@ are prepared to make worse over the next two weeks.
 
 ## In the session
 
-The brief is deceptively simple: make it significantly worse without breaking
-it. You cannot remove functionality; you can only introduce friction. The
-session works through the menu of options — more cognitive load,
-harder-to-find information, new ambiguity, extra unnecessary decisions, added
-waiting, error recovery that punishes mistakes — and you start applying them
-to your own interface.
+The Bad Design Studio: you're handed a simple, working interface — a
+checkout, a booking system, a registration form, a settings page — and the
+brief is deceptively simple: make it significantly worse without breaking it.
+You cannot remove functionality; you can only introduce friction. The session
+works through the menu of options — more cognitive load, harder-to-find
+information, new ambiguity, extra unnecessary decisions, added waiting, error
+recovery that punishes mistakes — and you start applying them to your own
+interface.
 
 ## Afterwards
 
 This is the semester's first making exercise: from "I recognise bad design"
 to "I can deliberately produce it." Keep building through
-[week 6](/sessions/06-friction-mapping/) —
+[week 6](/sessions/06-friction-lab/) —
 [Assessment 2, the Worst Interface](/assessments/worst-interface/), is due at
 the end of that week.

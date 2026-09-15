@@ -1,5 +1,5 @@
 ---
-title: The Redesign Review
+title: Redemption Studio
 description:
   Returning to your original bad system to fix it, without destroying
   whatever legitimate goal it was actually serving
@@ -24,11 +24,12 @@ original problem — not just what was wrong with it.
 
 ## In the session
 
-The Redesign Review: you present before, why it was bad, what caused it, the
-redesign, and what changed, and your peers critique whether it actually
-solves the original problem rather than just looking nicer. The constraint
-that makes this hard is the same one from week 5, run in reverse: make it
-better without destroying the original system's legitimate goals.
+Redemption Studio: you present your final-project system in five steps —
+Original → Problem → Cause → Constraints → Proposed Redesign — and your peers
+challenge the redesign by naming any stakeholder or requirement it looks like
+you've ignored. The constraint that makes this hard is the same one from
+week 5, run in reverse: make it better without destroying the original
+system's legitimate goals.
 
 ## Afterwards
 

@@ -1,5 +1,5 @@
 ---
-title: The Defence
+title: Defend the Indefensible
 description:
   Is bad design actually bad? Each student defends a hated design from the
   Hate Catalogue as if it were good
@@ -23,7 +23,7 @@ hated design in the room.
 
 ## In the session
 
-The Defence: you're handed a design from the semester's Hate Catalogue that
+Defend the Indefensible: you're handed a design from the semester's Hate Catalogue that
 you did not submit, and your job is to argue "this is actually good design" —
 even, especially, if you still hate using it. Airport security, two-factor
 authentication and speed bumps are the standing examples of

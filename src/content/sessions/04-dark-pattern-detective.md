@@ -1,5 +1,5 @@
 ---
-title: Dark Pattern Bingo
+title: Dark Pattern Detective
 description:
   Naming the dark arts — confirmshaming, forced continuity, bait-and-switch —
   and what behaviour each one is actually trying to produce
@@ -22,12 +22,13 @@ shopping.
 
 ## In the session
 
-Dark Pattern Bingo: as a class, you browse real interfaces looking for
+Dark Pattern Detective: as a class, you browse real interfaces looking for
 confirmshaming, hidden costs, forced continuity, bait-and-switch, trick
 questions, disguised ads, difficult cancellation, privacy manipulation, and
-sneaked-in basket items. For each one found, three questions: what is the
-user being encouraged to do, what would they probably do without the
-manipulation, and which specific design decision is doing the work?
+sneaked-in basket items. For each one found, you build the case file in four
+questions: what does the user want, what does the organisation want, what
+behaviour is the interface actually encouraging, and which specific design
+decision creates that behaviour?
 
 ## Afterwards
 

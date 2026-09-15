@@ -8,7 +8,7 @@ date: 2027-03-29
 teachers:
   - marisol-quaye
 related:
-  - sessions/06-friction-mapping
+  - sessions/06-friction-lab
   - assessments/worst-interface
 ---
 
@@ -22,6 +22,6 @@ place and measure rather than just suffer.
 ## Outline
 
 - useful, accidental, deliberate and destructive friction
-- Friction Mapping, [this week's session](/sessions/06-friction-mapping/)
+- The Friction Lab, [this week's session](/sessions/06-friction-lab/)
 - [Assessment 2](/assessments/worst-interface/) is due today
 - next block: the interface stops being a screen

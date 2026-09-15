@@ -8,7 +8,7 @@ date: 2027-03-15
 teachers:
   - marisol-quaye
 related:
-  - sessions/04-dark-pattern-bingo
+  - sessions/04-dark-pattern-detective
 ---
 
 Dark patterns have names because names travel: confirmshaming, forced
@@ -25,5 +25,5 @@ it, and what exactly changes that."
   questions, disguised advertisements, difficult cancellation, privacy
   manipulation, basket sneaking
 - why the pattern's name matters less than the behaviour it produces
-- Dark Pattern Bingo, [this week's session](/sessions/04-dark-pattern-bingo/)
+- Dark Pattern Detective, [this week's session](/sessions/04-dark-pattern-detective/)
 - next week: applying this deliberately, for the first time

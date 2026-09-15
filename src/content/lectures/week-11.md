@@ -8,7 +8,7 @@ date: 2027-05-17
 teachers:
   - marisol-quaye
 related:
-  - sessions/11-the-redesign-review
+  - sessions/11-redemption-studio
   - assessments/redemption-project
 ---
 
@@ -23,7 +23,7 @@ allowed to claim your version is better.
 
 - what the user needs, what the organisation needs, what constraints exist,
   what actually caused the problem
-- The Redesign Review, [this week's session](/sessions/11-the-redesign-review/)
+- Redemption Studio, [this week's session](/sessions/11-redemption-studio/)
 - what [the Redemption Project](/assessments/redemption-project/) still
   needs before next week
 - the semester's full arc, in one line: observe, understand, manipulate,

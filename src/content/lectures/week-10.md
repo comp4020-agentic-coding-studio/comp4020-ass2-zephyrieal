@@ -8,7 +8,7 @@ date: 2027-05-10
 teachers:
   - marisol-quaye
 related:
-  - sessions/10-the-defence
+  - sessions/10-defend-the-indefensible
   - assessments/redemption-project
 ---
 
@@ -25,6 +25,6 @@ semester, because it's the one the Redemption Project is built on.
 - design quality as "what behaviour is this trying to produce, and for whom"
 - frustrating-but-necessary design: security, warnings, confirmations,
   interlocks
-- The Defence, [this week's session](/sessions/10-the-defence/)
+- Defend the Indefensible, [this week's session](/sessions/10-defend-the-indefensible/)
 - from here, weeks 11 and 12 are the Redemption Project's own workshop, not
   new topics

@@ -1,17 +1,17 @@
 ---
-title: Friction Mapping
+title: Friction Lab
 description:
-  Not all difficulty is equal — mapping a task step by step and choosing
-  exactly where to put the friction. Assessment 2 is due this week
+  Not all difficulty is equal — redesigning one task three ways and comparing
+  what each version costs the user. Assessment 2 is due this week
 week: 6
 date: 2027-03-29
 teachers:
   - idris-fenn
 spec:
-  - you have mapped your task into its individual steps before adding any
-    friction
-  - you can distinguish, for at least one step, useful friction from friction
-    that only serves your assignment
+  - you have a low-friction, an annoying, and an extremely high-friction
+    version of the same task
+  - you can distinguish, for at least one version, useful friction from
+    friction that only serves your assignment
   - The Worst Interface is submitted by the due date
 related:
   - assessments/worst-interface
@@ -19,18 +19,18 @@ related:
 
 ## Before the session
 
-Bring your interface from week 5 broken down into its individual steps —
-open, search, select, enter information, pay, confirm, or whatever the
-equivalent sequence is for your task.
+Bring one simple task from your week 5 interface — buy a ticket is the
+standing example — that you can redesign three separate times before the
+session ends.
 
 ## In the session
 
-Friction Mapping: the class picks a common task — buy a ticket is the
-standing example — and maps every step, then deliberately places friction
-into different parts of the journey and compares which kind is most annoying,
-and to whom. A password reset that protects an account is useful friction;
-the same requirement demanded weekly is destructive friction wearing the same
-clothes.
+The Friction Lab: you redesign the same task three ways — a low-friction
+version, an annoying version, and an extremely high-friction version — and
+compare how small design decisions increase the effort required to complete
+an otherwise identical task. A password reset that protects an account is
+useful friction; the same requirement demanded weekly is destructive friction
+wearing the same clothes.
 
 ## Afterwards
 
