@@ -112,7 +112,7 @@ Students initially classify their examples according to **what the user experien
 
 ### Activity — The Hate Wall
 
-Students submit an example of something they hate and explain the exact moment where the experience becomes frustrating.
+Students submit three examples of something they hate and explain, for each one, the exact moment where the experience becomes frustrating.
 
 The class begins building a shared **Hate Catalogue**.
 
@@ -231,15 +231,16 @@ Students investigate patterns such as:
 
 The emphasis is not simply on memorising names. Students must identify **what behaviour each pattern is attempting to produce**.
 
-### Activity — Dark Pattern Bingo
+### Activity — Dark Pattern Detective
 
 Students browse real interfaces and attempt to identify dark patterns.
 
 For each pattern they identify, they must answer:
 
-1. What is the user being encouraged to do?
-2. What would the user probably do without the manipulation?
-3. What design decision changes that behaviour?
+1. What does the user want?
+2. What does the organisation want?
+3. What behaviour is the interface encouraging?
+4. What design technique creates that behaviour?
 
 ### Builds From
 
@@ -273,6 +274,10 @@ Examples include:
 - creating unnecessary decisions;
 - increasing waiting;
 - making errors harder to recover from.
+
+### Activity — Bad Design Studio
+
+Students receive a simple, well-designed interface such as a checkout, booking system, registration form, or settings page, and deliberately make it worse while keeping it functional.
 
 ### Assessment 1 — The Worst Interface
 
@@ -319,19 +324,19 @@ The same requirement can become terrible when a system demands a password reset 
 
 Students learn to think about friction as something that can be **designed and measured**.
 
-### Activity — Friction Mapping
+### Activity — Friction Lab
 
-Students take a common task such as:
+Students take one simple task, such as:
 
 > Buy a ticket.
 
-They map every step:
+And redesign it three ways:
 
-**Open → Search → Select → Enter Information → Pay → Confirm**
+1. Low-friction version
+2. Annoying version
+3. Extremely high-friction version
 
-They then deliberately introduce friction into different parts of the journey.
-
-The class compares which forms of friction are most annoying.
+They compare how small design decisions increase the effort required to complete the same task.
 
 ### Builds From
 
@@ -497,7 +502,7 @@ This introduces a more sophisticated definition:
 
 > **Design quality depends on what behaviour the system is trying to produce and for whom.**
 
-### Activity — The Defence
+### Activity — Defend the Indefensible
 
 Each student is assigned a hated design from the Hate Catalogue.
 
@@ -544,13 +549,13 @@ Students must identify:
 5. What they changed.
 6. What trade-offs remain.
 
-### Activity — The Redesign Review
+### Activity — Redemption Studio
 
 Students present:
 
-**Before → Why it was bad → What caused it → Redesign → What changed**
+**Original → Problem → Cause → Constraints → Proposed Redesign**
 
-Peers critique whether the redesign actually solves the original problem.
+Peers critique the redesign by identifying stakeholders or requirements that may have been ignored.
 
 ### Builds From
 
@@ -927,3 +932,33 @@ workshop rather than new unrelated material:
   their redesign (unchanged theme, now explicitly the final project's draft).
 - **Week 12 — The Worst Design Awards**: final presentations double as the
   Redemption Project's presentation.
+
+---
+
+# 13. Addendum — activity names from the weekly design pass
+
+`weekly-course-design.md` is a later, more detailed pass over the same
+semester and supersedes Section 5's activity names and details wherever they
+differ. The weekly themes, key questions and assessment placement above are
+unchanged; only the following activities were renamed or given more specific
+shape, and Section 5 has been edited in place to match:
+
+- **Week 1**: the Hate Wall now asks for three examples per student, not one.
+- **Week 4 — Dark Pattern Detective** (was "Dark Pattern Bingo"): the same
+  hunt for named patterns, now run as a four-question case file (user goal,
+  organisation goal, behaviour encouraged, technique that creates it) rather
+  than three.
+- **Week 5 — Bad Design Studio**: names the tutorial that was previously
+  folded into the week's theme without its own name, and fixes the interface
+  types on offer (checkout, booking system, registration form, settings
+  page).
+- **Week 6 — Friction Lab** (was "Friction Mapping"): rather than mapping one
+  task's steps and sprinkling friction across them, students now build three
+  explicit versions of the same task — low-friction, annoying, extremely
+  high-friction — and compare the versions directly.
+- **Week 10 — Defend the Indefensible** (was "The Defence"): same brief, more
+  specific name.
+- **Week 11 — Redemption Studio** (was "The Redesign Review"): the
+  presentation structure is now the explicit five-step **Original → Problem →
+  Cause → Constraints → Proposed Redesign**, replacing the looser
+  before/why/caused-it/redesign/changed framing.
