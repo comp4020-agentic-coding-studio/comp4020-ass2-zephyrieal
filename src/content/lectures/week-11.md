@@ -1,8 +1,8 @@
 ---
 title: Fix It Without Breaking It
 description:
-  Week 11 — redesigning a hostile system without pretending its original
-  goals didn't exist
+  Redesigning a hostile system without pretending its original goals didn't
+  exist
 week: 11
 date: 2027-05-17
 teachers:

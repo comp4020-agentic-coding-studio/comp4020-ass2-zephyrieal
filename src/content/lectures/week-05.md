@@ -1,8 +1,8 @@
 ---
 title: Make It Worse
 description:
-  Week 5 — the first major making exercise, and the difference between
-  removing something and making it worse
+  The first major making exercise, and the difference between removing
+  something and making it worse
 week: 5
 date: 2027-03-22
 teachers:

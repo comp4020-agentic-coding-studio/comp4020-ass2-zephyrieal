@@ -1,7 +1,7 @@
 ---
 title: Your Brain Is Part of the Interface
 description:
-  Week 3 — defaults, scarcity, social proof and the rest of the vocabulary for
+  Defaults, scarcity, social proof and the rest of the vocabulary for
   describing what a design is actually doing to you
 week: 3
 date: 2027-03-08

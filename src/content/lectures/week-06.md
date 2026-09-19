@@ -1,7 +1,7 @@
 ---
 title: Friction
 description:
-  Week 6 — useful, accidental, deliberate and destructive friction, and why
+  Useful, accidental, deliberate and destructive friction, and why
   "difficult" is not one thing
 week: 6
 date: 2027-03-29

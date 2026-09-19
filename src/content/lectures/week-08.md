@@ -1,8 +1,8 @@
 ---
 title: "Bureaucracy: Designing the Impossible"
 description:
-  Week 8 — when the interface isn't a screen at all, but a sequence of rules
-  with a person trapped inside it
+  When the interface isn't a screen at all, but a sequence of rules with a
+  person trapped inside it
 week: 8
 date: 2027-04-26
 teachers:

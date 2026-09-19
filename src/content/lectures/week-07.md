@@ -1,8 +1,8 @@
 ---
 title: The Physical World Is Also a UI
 description:
-  Week 7 — affordances, doors, and the argument for treating a chair the same
-  way you'd treat a checkout flow
+  Affordances, doors, and the argument for treating a chair the same way
+  you'd treat a checkout flow
 week: 7
 date: 2027-04-19
 teachers:

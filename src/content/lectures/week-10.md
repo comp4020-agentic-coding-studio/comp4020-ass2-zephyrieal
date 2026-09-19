@@ -1,8 +1,8 @@
 ---
 title: Is Bad Design Actually Bad?
 description:
-  Week 10 — the course's central twist, and the start of the final project's
-  own workshop
+  The course's central twist, and the start of the final project's own
+  workshop
 week: 10
 date: 2027-05-10
 teachers:

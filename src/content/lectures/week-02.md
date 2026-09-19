@@ -1,8 +1,8 @@
 ---
 title: The User Is Not the Customer
 description:
-  Week 2 — separating who a system serves from who it merely tolerates, and
-  why "bad" is always bad for somebody in particular
+  Separating who a system serves from who it merely tolerates, and why "bad"
+  is always bad for somebody in particular
 week: 2
 date: 2027-03-01
 teachers:

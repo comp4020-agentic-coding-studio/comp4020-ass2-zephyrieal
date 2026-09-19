@@ -1,8 +1,8 @@
 ---
 title: Does It Actually Work?
 description:
-  Week 9 — from designing frustration on paper to measuring whether it
-  survives contact with an actual person
+  From designing frustration on paper to measuring whether it survives
+  contact with an actual person
 week: 9
 date: 2027-05-03
 teachers:

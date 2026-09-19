@@ -1,8 +1,8 @@
 ---
 title: The Dark Arts of Interface Design
 description:
-  Week 4 — the named patterns, and why memorising the list is the least
-  useful part of learning it
+  The named patterns, and why memorising the list is the least useful part of
+  learning it
 week: 4
 date: 2027-03-15
 teachers:
