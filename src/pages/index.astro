@@ -77,6 +77,43 @@ const stages = [
     </div>
   </header>
 
+  <h2>Course at a glance</h2>
+  <dl class="at-facts">
+    <div class="at-facts-row">
+      <dt>What this course is</dt>
+      <dd>
+        A twelve-week course built on one thesis: design is the deliberate
+        arrangement of choices, and whoever controls the choices controls the
+        behaviour. You don't memorise a list of dark patterns — you build
+        them, deliberately, so you learn to recognise the same moves in the
+        wild. Everything before week 12 is practice for the
+        {" "}<a href={withBase("/assessments/redemption-project/")}>Redemption Project</a>,
+        where you turn that practice on something real.
+      </dd>
+    </div>
+    <div class="at-facts-row">
+      <dt>What you submit</dt>
+      <dd>
+        Four assessments, each closing one of the semester's blocks: the Hate
+        Catalogue (15%, week 3), The Worst Interface (25%, week 6), the
+        Hostile Design Experiment (20%, week 9), and the Redemption Project
+        (40%, week 12).{" "}
+        <a href={withBase("/assessments/")}>Assessment</a> has the full
+        criteria for each.
+      </dd>
+    </div>
+    <div class="at-facts-row">
+      <dt>Where to start</dt>
+      <dd>
+        Open {sessionLabels.plural} and read week 1, The Hate Wall. Bring
+        three ordinary things you already hate using, each specific enough
+        that a stranger could recognise it — those three go straight into the
+        class's shared Hate Catalogue on day one.{" "}
+        <a href={withBase("/sessions/01-getting-started/")}>Start there</a>.
+      </dd>
+    </div>
+  </dl>
+
   <h2>What you will do</h2>
   <p>
     Every week you take something people already hate — a form, a checkout, a
@@ -208,6 +245,36 @@ const stages = [
   @media (prefers-reduced-motion: reduce) {
     .enter-course-link {
       transition: none;
+    }
+  }
+
+  .at-facts {
+    display: grid;
+    gap: var(--at-spacing-lg);
+    margin-block: var(--at-spacing-lg);
+    padding: var(--at-spacing-lg);
+    border: 1px solid var(--at-primary);
+  }
+
+  .at-facts-row {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    gap: var(--at-spacing-md);
+  }
+
+  .at-facts-row dt {
+    font-weight: 600;
+  }
+
+  .at-facts-row dd {
+    margin: 0;
+    color: var(--at-text-secondary);
+  }
+
+  @media (max-width: 40rem) {
+    .at-facts-row {
+      grid-template-columns: 1fr;
+      gap: 0.35rem;
     }
   }
 </style>
