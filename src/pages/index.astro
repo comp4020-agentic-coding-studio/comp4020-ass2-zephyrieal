@@ -1,8 +1,10 @@
 ---
+import { Image } from "astro:assets";
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import BaseLayout from "astro-theme-university/layouts/BaseLayout.astro";
 import { withBase } from "astro-theme-university/url";
+import homepageCover from "../assets/images/homepage-cover.png";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
 
@@ -44,36 +46,47 @@ const stages = [
   {...siteConfig}
 >
   <header class="notice" slot="hero">
-    <div class="notice-plate">
-      <span class="at-plate">Slop University</span>
-      <span class="at-plate notice-file">File No. {courseMeta.code}</span>
-    </div>
-    <p class="notice-kicker">Notice of Enrolment</p>
-    <h1>{courseMeta.title}</h1>
-    <p class="notice-lede">{courseMeta.description}</p>
-    <ul class="notice-tags" aria-label="Course tags">
-      {courseMeta.tags.map((tag, i) => (
-        <>
-          {i > 0 && <li aria-hidden="true" class="notice-tag-sep">·</li>}
-          <li>{tag}</li>
-        </>
-      ))}
-    </ul>
+    <Image
+      src={homepageCover}
+      alt=""
+      widths={[768, 1536, 1672]}
+      sizes="100vw"
+      loading="eager"
+      fetchpriority="high"
+      class="notice-image"
+    />
+    <div class="notice-content">
+      <div class="notice-plate">
+        <span class="at-plate">Slop University</span>
+        <span class="at-plate notice-file">File No. {courseMeta.code}</span>
+      </div>
+      <p class="notice-kicker">Notice of Enrolment</p>
+      <h1>{courseMeta.title}</h1>
+      <p class="notice-lede">{courseMeta.description}</p>
+      <ul class="notice-tags" aria-label="Course tags">
+        {courseMeta.tags.map((tag, i) => (
+          <>
+            {i > 0 && <li aria-hidden="true" class="notice-tag-sep">·</li>}
+            <li>{tag}</li>
+          </>
+        ))}
+      </ul>
 
-    <div class="at-notice-box">
-      <p><strong>This course will</strong> teach you to build interfaces that make
-      people do what you want — and how to tell, from the inside, when one is
-      doing it to you.</p>
-    </div>
+      <div class="at-notice-box">
+        <p><strong>This course will</strong> teach you to build interfaces that make
+        people do what you want — and how to tell, from the inside, when one is
+        doing it to you.</p>
+      </div>
 
-    <div class="enter-course" data-enter-course>
-      <a href={withBase("/sessions/")} class="enter-course-link" data-enter-course-link>
-        Enter Course
-      </a>
-      <p class="visually-hidden">
-        This button moves away from the pointer. Tab to it and press Enter to
-        activate it without chasing it.
-      </p>
+      <div class="enter-course" data-enter-course>
+        <a href={withBase("/sessions/")} class="enter-course-link" data-enter-course-link>
+          Enter Course
+        </a>
+        <p class="visually-hidden">
+          This button moves away from the pointer. Tab to it and press Enter to
+          activate it without chasing it.
+        </p>
+      </div>
     </div>
   </header>
 
@@ -163,8 +176,34 @@ const stages = [
 
 <style>
   .notice {
-    padding-block: var(--at-spacing-xl) var(--at-spacing-lg);
+    grid-column: full;
+    position: relative;
+    display: grid;
+    grid-template-columns: subgrid;
+    min-height: 26rem;
+    overflow: hidden;
     text-align: left;
+  }
+
+  .notice-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Text sits in front of the illustration on a flat scrim rather than a
+     bottom-anchored gradient (unlike the theme's Hero) --- the notice's
+     content runs top to bottom (plate, tags, box, button), not just a
+     bottom-aligned title, so it needs contrast across the whole block. */
+  .notice-content {
+    position: relative;
+    grid-column: content;
+    padding-block: var(--at-spacing-xl) var(--at-spacing-lg);
+    padding-inline: var(--at-spacing-lg);
+    background: rgb(0 0 0 / 68%);
+    color: var(--at-white);
   }
 
   .notice-plate {
@@ -173,17 +212,17 @@ const stages = [
     align-items: baseline;
     gap: var(--at-spacing-md);
     padding-block-end: var(--at-spacing-sm);
-    border-bottom: 3px double var(--at-primary);
+    border-bottom: 3px double var(--at-secondary);
     color: var(--at-secondary);
   }
 
   .notice-file {
-    color: var(--at-text-secondary);
+    color: rgb(255 255 255 / 78%);
   }
 
   .notice-kicker {
     margin-block: var(--at-spacing-md) 0;
-    color: var(--at-text-secondary);
+    color: rgb(255 255 255 / 78%);
     font-size: 0.9rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -191,11 +230,12 @@ const stages = [
 
   .notice h1 {
     margin-block: 0.25rem var(--at-spacing-sm);
+    color: var(--at-white);
   }
 
   .notice-lede {
     max-width: 38ch;
-    color: var(--at-text-secondary);
+    color: rgb(255 255 255 / 82%);
   }
 
   .notice-tags {
@@ -206,11 +246,11 @@ const stages = [
     padding: 0;
     list-style: none;
     font-size: 0.9rem;
-    color: var(--at-text-secondary);
+    color: rgb(255 255 255 / 78%);
   }
 
   .notice-tag-sep {
-    color: var(--at-divider);
+    color: rgb(255 255 255 / 40%);
   }
 
   .enter-course {
