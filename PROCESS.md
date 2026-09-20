@@ -1,4 +1,4 @@
-# Process overview
+# Process
 
 Written by you, for a reader: how you got from the brief to the harness and
 agentic workflow behind this submission. Markers read this file and follow its
@@ -22,6 +22,67 @@ talks you out of dropping the course, and the policies page's feedback form
 always reports success while sending nothing — in-universe evidence of the
 course's own subject matter, kept inside the platform's accessibility and
 link-checking guarantees rather than actually breaking anything.
+
+## How I designed the harness
+
+I started with a simple idea: a course about frustrating and hostile design.
+My first concern was making sure that this could sustain a twelve-week
+university course rather than becoming twelve disconnected examples of bad
+UX. I decided that a good course should have a clear progression, where later
+weeks depend on ideas and skills introduced earlier. This produced the
+structure **observe → analyse → create → test → question → redesign**. The
+weekly topics and assessments were then organised around that progression
+rather than generated independently.
+([`b8689e4`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-zephyrieal/commit/b8689e4))
+
+This decision changed how I directed the agent. I did not want it to treat
+each page as an isolated content-generation task. I encoded rules in
+`CLAUDE.md` requiring weekly material to remain consistent with the course
+progression, use concepts already introduced where appropriate, and prepare
+students for upcoming assessments. I also specified that lectures and
+tutorials have different roles: lectures introduce and explain concepts, while
+tutorials require students to apply them through activities such as the Hate
+Wall, Friction Lab, and user testing. These constraints were intended to stop
+the agent from producing plausible individual pages that did not form a
+coherent course.
+([`d4b71a3`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-zephyrieal/commit/d4b71a3))
+
+Assessment design became another part of the harness. I wanted assessments to
+demonstrate increasing capability rather than simply test different topics.
+The **Hate Catalogue** asks students to analyse bad design, **The Worst
+Interface** asks them to deliberately create it, the **Hostile Design
+Experiment** tests whether their predictions survive contact with users, and
+the **Redemption Project** requires them to understand and redesign a real
+system. I added checks/rules so that assessment due weeks, weights, referenced
+concepts, and weekly material agree across the site. This was particularly
+useful because assessment information appears in multiple places and
+inconsistencies are easy for an agent to introduce.
+([`922ae3a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-zephyrieal/commit/922ae3a))
+
+I also wanted the course's unusual premise to affect the website itself. I
+asked the agent to use controlled examples of hostile design and humour, but
+rejected the idea of simply making the site difficult to use. The joke only
+works if the site remains a believable university course website. This became
+a boundary for what I accepted from the agent: playful interactions were
+appropriate when they demonstrated course concepts, but important information
+such as deadlines, assessment requirements, and navigation still needed to be
+accessible.
+([`8913d95`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-zephyrieal/commit/8913d95))
+
+I deliberately did not encode every design decision into the harness. Exact
+lecture wording, examples, visual composition, and individual jokes were left
+open because rigid checks would encourage repetition and make the generated
+pages feel templated. The harness instead concentrates on properties that need
+to remain true across the whole site: curriculum progression, internal
+consistency, assessment alignment, usable navigation, and the distinction
+between lecture and tutorial content.
+([`a623b94`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-zephyrieal/commit/a623b94))
+
+The harness therefore became less about telling the agent exactly what to
+write and more about defining what I considered an acceptable course. The
+agent could generate and revise individual pages, while `CLAUDE.md` and the
+checks in `spec/` preserved the decisions that made those pages belong to the
+same course.
 
 ## How I got here
 
@@ -122,13 +183,3 @@ suite — passed clean, and separately when `pnpm check:evidence` caught the
 starter-content markers, placeholder bios and unfilled `PROCESS.md` that a
 green `pnpm check` alone doesn't see: the two checks verify different things,
 and both needed to pass before this was actually done.
-
-## Before you ship
-
-`pnpm check:evidence` verifies that this comment is gone, that your citations
-resolve to real commits, that a crit week's reflection entry is in
-`reflections/`, and that your `CLAUDE.md` is there. It checks that your account
-is traceable, not that it is good: that is the marker's call.
-
-Images aren't checked: unlike a citation whose SHA doesn't resolve, a broken
-image is visible the moment this file is rendered on GitHub.
