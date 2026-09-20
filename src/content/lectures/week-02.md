@@ -10,6 +10,11 @@ teachers:
 related:
   - sessions/02-first-review
   - assessments/hate-catalogue
+coverImage: ./week-02-cover.png
+coverImageAlt:
+  A crossroads signpost with arrows pointing to Business, Users,
+  Shareholders, Designers and Society, next to the note "Different goals.
+  Different experiences."
 ---
 
 Someone designed the system in front of you, and someone else — not always

@@ -10,6 +10,10 @@ teachers:
 slides: /decks/week-01/
 related:
   - sessions/01-getting-started
+coverImage: ./week-01-cover.png
+coverImageAlt:
+  A ceramic mug cracked into a frowning face, leaking coffee onto the
+  counter, next to the note "Looks fine. Works terribly."
 ---
 
 Designing Things People Hate starts from a deliberately provocative title and

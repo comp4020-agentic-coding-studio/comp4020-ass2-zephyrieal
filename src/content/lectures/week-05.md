@@ -10,6 +10,11 @@ teachers:
 related:
   - sessions/05-make-it-worse
   - assessments/worst-interface
+coverImage: ./week-05-cover.png
+coverImageAlt:
+  An old CRT monitor cluttered with overlapping pop-ups and a "Continue"
+  button, beside a mug reading "Good design is boring" and sticky notes
+  reading "Just one more step..." and "You almost had it!"
 ---
 
 Weeks 1 through 4 were analytical: recognise, explain, name. Week 5 is the

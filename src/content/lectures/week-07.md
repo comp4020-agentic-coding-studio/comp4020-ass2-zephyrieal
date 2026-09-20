@@ -9,6 +9,10 @@ teachers:
   - marisol-quaye
 related:
   - sessions/07-hostile-object-safari
+coverImage: ./week-07-cover.png
+coverImageAlt:
+  A door handle plate labelled "PULL" on a door that has to be pushed,
+  next to the note "Looks like this. Works like that."
 ---
 
 Bad design doesn't require a screen. A door with a handle that reads "pull"

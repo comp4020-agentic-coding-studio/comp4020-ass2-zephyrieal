@@ -10,6 +10,11 @@ teachers:
 related:
   - sessions/10-defend-the-indefensible
   - assessments/redemption-project
+coverImage: ./week-10-cover.png
+coverImageAlt:
+  A yellow "SLOW DOWN" road sign above a smaller sign reading "Annoying
+  today. Safer tomorrow.", next to the note "Sometimes friction prevents
+  something worse."
 ---
 
 Airport security is slow, invasive and frustrating, and almost nobody would

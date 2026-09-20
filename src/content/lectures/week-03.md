@@ -10,6 +10,10 @@ teachers:
 related:
   - sessions/03-make-me-click-it
   - assessments/hate-catalogue
+coverImage: ./week-03-cover.png
+coverImageAlt:
+  A large pink model brain with a pixelated cursor arrow pressed into its
+  side, next to the note "Attention. Defaults. Choices. Consequences."
 ---
 
 Designers don't just design interfaces; they design decisions. This week

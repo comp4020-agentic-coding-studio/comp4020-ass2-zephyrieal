@@ -57,17 +57,29 @@ export const collections = {
 
   lectures: defineCollection({
     loader: courseNodeLoader("lectures"),
-    schema: courseNodeSchema
-      .extend({
-        week: weekSchema,
-        date: z.coerce.date(),
-        teachers: teacherRefs.optional(),
-        slides: z
-          .string()
-          .regex(/^\/decks\/[a-z0-9-]+\/$/)
-          .optional(),
-      })
-      .loose(),
+    schema: ({ image }) =>
+      courseNodeSchema
+        .extend({
+          week: weekSchema,
+          date: z.coerce.date(),
+          teachers: teacherRefs.optional(),
+          slides: z
+            .string()
+            .regex(/^\/decks\/[a-z0-9-]+\/$/)
+            .optional(),
+          coverImage: image().optional(),
+          coverImageAlt: z.string().trim().optional(),
+        })
+        .loose()
+        .superRefine((lecture, ctx) => {
+          if (lecture.coverImage && !lecture.coverImageAlt) {
+            ctx.addIssue({
+              code: "custom",
+              path: ["coverImageAlt"],
+              message: "describe the cover image when one is supplied",
+            });
+          }
+        }),
   }),
 
   people: defineCollection({

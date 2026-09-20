@@ -9,6 +9,11 @@ teachers:
   - marisol-quaye
 related:
   - sessions/08-the-maze
+coverImage: ./week-08-cover.png
+coverImageAlt:
+  A precarious stack of forms labelled Form A, Identification, Additional
+  Details, Declaration and Final Review, next to the note "Same
+  information. Again. And again."
 ---
 
 The worst interface might not be an interface at all — it might be a

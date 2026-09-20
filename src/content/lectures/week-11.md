@@ -10,6 +10,12 @@ teachers:
 related:
   - sessions/11-redemption-studio
   - assessments/redemption-project
+coverImage: ./week-11-cover.png
+coverImageAlt:
+  A wireframe sketch of an original screen redesigned into a better one,
+  surrounded by sticky notes checklisting users, business goals, technical
+  limits and legal requirements, next to the note "Better design keeps
+  the good and removes the bad."
 ---
 
 Redesigning something is easy if you're allowed to ignore why it existed in

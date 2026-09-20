@@ -10,6 +10,11 @@ teachers:
 related:
   - sessions/12-worst-design-awards
   - assessments/redemption-project
+coverImage: ./week-12-cover.png
+coverImageAlt:
+  A trophy shaped like a golden bin on a stage, engraved "Worst Design
+  Award — a brighter tomorrow through worse design", next to the note
+  "Celebrate the lessons. Not the mistakes."
 ---
 
 The course opened by asking what makes something genuinely bad, and it

@@ -10,6 +10,11 @@ teachers:
 related:
   - sessions/06-friction-lab
   - assessments/worst-interface
+coverImage: ./week-06-cover.png
+coverImageAlt:
+  A staircase of concrete steps labelled Click, Confirm, Verify, Wait and
+  Try Again, leading up to an hourglass, next to the note "Every extra
+  step has a cost."
 ---
 
 Not all difficulty is equal. A password requirement can protect an account —

@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import { render } from "astro:content";
 import { getPublishedCollection } from "astro-course-university/content";
 import RelatedContent from "astro-course-university/components/RelatedContent.astro";
@@ -19,9 +20,28 @@ const title = `Week ${lecture.data.week}: ${lecture.data.title}`;
 ---
 
 <ContentLayout title={title} description={lecture.data.description} {...siteConfig}>
+  {lecture.data.coverImage && (
+    <Image
+      src={lecture.data.coverImage}
+      alt={lecture.data.coverImageAlt ?? ""}
+      widths={[384, 768]}
+      sizes="(min-width: 48rem) 48rem, 100vw"
+      class="lecture-cover"
+    />
+  )}
   <p><strong>{formatCourseDate(lecture.data.date)}</strong></p>
   {lecture.data.slides && <p><a href={withBase(lecture.data.slides)}>Open the slides</a></p>}
   <Content />
   <TeachingTeam teachers={lecture.data.teachers} />
   <RelatedContent entry={lecture} collections={graphCollections} />
 </ContentLayout>
+
+<style>
+  .lecture-cover {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-block-end: var(--at-spacing-lg);
+    border-radius: var(--at-border-radius);
+  }
+</style>

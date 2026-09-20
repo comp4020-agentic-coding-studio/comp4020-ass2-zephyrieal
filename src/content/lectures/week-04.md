@@ -9,6 +9,11 @@ teachers:
   - marisol-quaye
 related:
   - sessions/04-dark-pattern-detective
+coverImage: ./week-04-cover.png
+coverImageAlt:
+  A glowing red corridor of doors under a neon sign reading "Just one more
+  step!", flanked by sticky notes reading "Are you sure?", "Maybe later?"
+  and a pre-checked "Add extra fees (Recommended)."
 ---
 
 Dark patterns have names because names travel: confirmshaming, forced

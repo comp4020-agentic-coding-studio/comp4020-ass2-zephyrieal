@@ -10,6 +10,11 @@ teachers:
 related:
   - sessions/09-human-guinea-pigs
   - assessments/hostile-design-experiment
+coverImage: ./week-09-cover.png
+coverImageAlt:
+  A person watching a stranger struggle through an "Almost done!" checkout
+  flow, next to a mug reading "Users are unpredictable" and the note
+  "Observe. Measure. Don't assume."
 ---
 
 Being annoying and being effective are not the same claim, and this is the
