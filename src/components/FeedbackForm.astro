@@ -1,0 +1,67 @@
+---
+---
+
+<form class="feedback-form" data-feedback-form>
+  <div class="feedback-field">
+    <label for="feedback-name">Name</label>
+    <input id="feedback-name" name="name" type="text" autocomplete="name" />
+  </div>
+  <div class="feedback-field">
+    <label for="feedback-message">What happened</label>
+    <textarea id="feedback-message" name="message" rows="4" required></textarea>
+  </div>
+  <button type="submit" class="at-button feedback-submit" data-feedback-submit>
+    Send feedback
+  </button>
+  <p class="feedback-status" data-feedback-status role="status"></p>
+</form>
+
+<style>
+  .feedback-form {
+    display: grid;
+    gap: var(--at-spacing-md);
+    max-width: 32rem;
+    margin-block-start: var(--at-spacing-md);
+  }
+
+  .feedback-field {
+    display: grid;
+    gap: var(--at-spacing-xs);
+  }
+
+  .feedback-submit {
+    justify-self: start;
+  }
+
+  .feedback-status {
+    margin: 0;
+    min-height: 1.4em;
+    color: var(--at-text-secondary);
+  }
+</style>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>("[data-feedback-form]");
+  const status = document.querySelector<HTMLElement>("[data-feedback-status]");
+  const submit = document.querySelector<HTMLButtonElement>("[data-feedback-submit]");
+
+  form?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (!status || !submit) return;
+
+    submit.disabled = true;
+    submit.textContent = "Sending…";
+    status.textContent = "";
+
+    // The delay and the outcome are both the point: long enough to look like
+    // it went somewhere, and it never does. Announced via role="status" so a
+    // screen reader user isn't left waiting on nothing.
+    window.setTimeout(() => {
+      submit.disabled = false;
+      submit.textContent = "Send feedback";
+      status.textContent =
+        "Feedback received and immediately discarded — this form has never gone anywhere. If it's urgent, email a real person on the policies page.";
+      form.reset();
+    }, 1600);
+  });
+</script>

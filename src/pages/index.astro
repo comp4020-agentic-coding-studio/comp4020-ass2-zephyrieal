@@ -87,8 +87,33 @@ const stages = [
           activate it without chasing it.
         </p>
       </div>
+
+      <p class="drop-course-prompt">
+        <button type="button" class="drop-course-trigger" data-drop-course-trigger>
+          Considering dropping the course?
+        </button>
+      </p>
     </div>
   </header>
+
+  <dialog class="drop-course-dialog" data-drop-course-dialog aria-labelledby="drop-course-title">
+    <div class="drop-course-panel">
+      <h2 id="drop-course-title">Wait — are you sure?</h2>
+      <p>
+        Students who drop this course go on to lead perfectly ordinary lives.
+        Nobody brings them up at reunions.
+      </p>
+      <div class="drop-course-actions">
+        <button type="button" class="at-button" data-drop-course-stay>
+          No thanks, keep me enrolled
+        </button>
+        <button type="button" class="drop-course-leave" data-drop-course-leave>
+          Drop it anyway
+        </button>
+      </div>
+      <p class="drop-course-note" data-drop-course-note role="status"></p>
+    </div>
+  </dialog>
 
   <h2>Course at a glance</h2>
   <dl class="at-facts">
@@ -288,6 +313,87 @@ const stages = [
     }
   }
 
+  .drop-course-prompt {
+    margin-block-start: var(--at-spacing-sm);
+    text-align: right;
+  }
+
+  .drop-course-trigger {
+    border: none;
+    background: none;
+    padding: 0;
+    color: var(--at-text-secondary);
+    font: inherit;
+    font-size: var(--at-font-size-sm);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .drop-course-trigger:hover,
+  .drop-course-trigger:focus-visible {
+    color: var(--at-link);
+  }
+
+  .drop-course-dialog {
+    border: none;
+    border-radius: calc(var(--at-border-radius) * 5 / 3);
+    background: transparent;
+    padding: 0;
+    max-width: min(28rem, calc(100% - 2 * var(--at-spacing-lg)));
+    width: 100%;
+    margin-block-start: 12vh;
+  }
+
+  .drop-course-dialog::backdrop {
+    background: rgb(0 0 0 / 50%);
+  }
+
+  .drop-course-panel {
+    display: grid;
+    gap: var(--at-spacing-md);
+    padding: var(--at-spacing-lg);
+    background: var(--at-bg-elevated);
+    border: 1px solid var(--at-divider);
+    border-radius: calc(var(--at-border-radius) * 5 / 3);
+    box-shadow: var(--at-shadow-lg);
+  }
+
+  .drop-course-panel h2 {
+    margin: 0;
+  }
+
+  .drop-course-panel p {
+    margin: 0;
+  }
+
+  .drop-course-actions {
+    display: grid;
+    justify-items: center;
+    gap: var(--at-spacing-sm);
+  }
+
+  .drop-course-leave {
+    border: none;
+    background: none;
+    padding: var(--at-spacing-xs);
+    color: var(--at-text-secondary);
+    font: inherit;
+    font-size: var(--at-font-size-xs);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .drop-course-leave:hover,
+  .drop-course-leave:focus-visible {
+    color: var(--at-link);
+  }
+
+  .drop-course-note {
+    min-height: 1.4em;
+    font-size: var(--at-font-size-sm);
+    color: var(--at-text-secondary);
+  }
+
   .at-facts {
     display: grid;
     gap: var(--at-spacing-lg);
@@ -357,4 +463,26 @@ const stages = [
       link.style.transform = "none";
     });
   }
+
+  const dropTrigger = document.querySelector<HTMLButtonElement>("[data-drop-course-trigger]");
+  const dropDialog = document.querySelector<HTMLDialogElement>("[data-drop-course-dialog]");
+  const dropStay = document.querySelector<HTMLButtonElement>("[data-drop-course-stay]");
+  const dropLeave = document.querySelector<HTMLButtonElement>("[data-drop-course-leave]");
+  const dropNote = document.querySelector<HTMLElement>("[data-drop-course-note]");
+
+  dropTrigger?.addEventListener("click", () => {
+    if (dropNote) dropNote.textContent = "";
+    dropDialog?.showModal();
+  });
+
+  dropStay?.addEventListener("click", () => dropDialog?.close());
+
+  // There is no drop-course flow behind this button — clicking it just
+  // admits that, which is the joke: a fake exit that never lets you leave.
+  dropLeave?.addEventListener("click", () => {
+    if (dropNote) {
+      dropNote.textContent =
+        "There is no drop-course flow here — that button has never worked. Consider it week 4's material, three weeks early.";
+    }
+  });
 </script>
