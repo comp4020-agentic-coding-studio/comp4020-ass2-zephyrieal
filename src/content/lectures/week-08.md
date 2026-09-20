@@ -28,6 +28,8 @@ actual obstacle.
 
 - university administration, government forms, insurance and refunds as
   interfaces
+- how one reasonable requirement, repeated across departments, adds up to
+  an unreasonable process
 - why a beautiful screen can't rescue a broken process underneath it
 - The Maze, [this week's session](/sessions/08-the-maze/)
 - next week: testing whether any of this actually works

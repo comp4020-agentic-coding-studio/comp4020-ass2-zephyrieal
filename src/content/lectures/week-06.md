@@ -27,6 +27,10 @@ place and measure rather than just suffer.
 ## Outline
 
 - useful, accidental, deliberate and destructive friction
+- five shapes it takes: interaction, cognitive, temporal, emotional and
+  physical
+- why a delete confirmation and a fake "are you sure?" wall aren't the same
+  kind of friction, even though they look identical
 - The Friction Lab, [this week's session](/sessions/06-friction-lab/)
 - [Assessment 2](/assessments/worst-interface/) is due today
 - next block: the interface stops being a screen

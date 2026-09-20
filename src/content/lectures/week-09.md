@@ -30,6 +30,8 @@ semester.
 - what to measure: completion time, errors, abandonment, confusion, success
   rate, clicks, perceived difficulty
 - why a silent observer is the point, not an oversight
+- a failed prediction is still a result — it's what tells you the
+  interface didn't do what you thought
 - Human Guinea Pigs, [this week's session](/sessions/09-human-guinea-pigs/)
 - [the Hostile Design Experiment](/assessments/hostile-design-experiment/) is
   due today

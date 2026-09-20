@@ -24,11 +24,21 @@ and a genuine success for the business measuring how many people give up
 partway through. Both descriptions are true at once, which is exactly why
 "bad design" needs a second question attached to it: bad for whom?
 
+Behind almost any bad design there's a longer list of people than just "the
+user" — the business paying for it, the advertiser it serves, the
+government requiring it, the developer who was told to reduce
+cancellations, not improve them. None of them are lying when they say the
+design works. It's just working for somebody else, and the difference
+between an accident and a decision is usually just who benefits from it.
+
 ## Outline
 
 - user goals versus designer, business, institutional and technical goals
 - why a design can be bad for one party and excellent for another, at the
   same time
+- the incentives that shape the decision: revenue, retention, data, cost,
+  compliance
+- telling an accident from something built that way on purpose
 - Follow the Incentive, and what it asks of
   [this week's session](/sessions/02-first-review/)
 - what the Hate Catalogue needs before week 3

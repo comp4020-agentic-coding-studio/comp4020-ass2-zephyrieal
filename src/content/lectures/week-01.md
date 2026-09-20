@@ -25,9 +25,19 @@ instinct. A truly effective bad design is often popular, functional, even
 good-looking; it's bad because of what it makes you do, not how it looks
 doing it.
 
+Most of what makes something genuinely bad to use comes down to a handful
+of ordinary ideas, not a design vocabulary you need to learn first: whether
+it does what you expected, whether you could tell what your options even
+were, whether it told you anything happened when you pressed the button,
+and whether a mistake was easy to make and hard to undo. You already know
+the feeling of pressing something twice because nothing seemed to happen
+the first time — that's the whole course, before it has a name for itself.
+
 ## Outline
 
 - why the course's real subject is behaviour, not appearance
+- expectations, discoverability, feedback and errors — the four ordinary
+  ways something fails you before you've even started
 - Notice → Explain → Manipulate → Break → Measure → Design → Defend →
   Redesign — the shape of the whole semester
 - what the Hate Wall does with today's submissions, and how it becomes the

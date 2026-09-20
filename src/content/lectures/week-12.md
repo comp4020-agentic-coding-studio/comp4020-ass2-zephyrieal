@@ -26,6 +26,7 @@ better set of tools for arguing about one.
 ## Outline
 
 - the categories, and what each one is actually measuring
-- returning to week 1's question with twelve weeks of evidence behind it
+- returning to week 1's question through six perspectives: user,
+  behavioural, organisational, system, evidence and redesign
 - The Worst Design Awards, [this week's session](/sessions/12-worst-design-awards/)
 - [the Redemption Project](/assessments/redemption-project/) is due today

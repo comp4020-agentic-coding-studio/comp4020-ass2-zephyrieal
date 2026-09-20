@@ -26,7 +26,8 @@ betrayal, that software does.
 
 ## Outline
 
-- affordances and expectations, on objects rather than screens
+- affordances, signifiers and mapping — what an object promises, what it
+  tells you, and whether the two line up
 - what "hostile" means for something that has no error message
 - Hostile Object Safari,
   [this week's session](/sessions/07-hostile-object-safari/)

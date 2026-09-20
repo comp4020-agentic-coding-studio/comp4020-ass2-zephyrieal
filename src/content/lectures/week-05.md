@@ -29,6 +29,8 @@ introducing friction that a user has to work through is.
 - the constraint that makes this hard: worse, not broken, not missing
 - the menu of frictions: cognitive load, hidden information, ambiguity,
   unnecessary decisions, waiting, punishing errors
+- turning information hierarchy against the user without changing a single
+  fact on the page
 - [this week's session](/sessions/05-make-it-worse/), and what carries into
   week 6
 - what [Assessment 2](/assessments/worst-interface/) asks you to hand in

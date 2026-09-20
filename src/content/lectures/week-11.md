@@ -29,6 +29,8 @@ allowed to claim your version is better.
 
 - what the user needs, what the organisation needs, what constraints exist,
   what actually caused the problem
+- diagnosing the cause before proposing a fix, and prioritising the
+  problems that actually matter
 - Redemption Studio, [this week's session](/sessions/11-redemption-studio/)
 - what [the Redemption Project](/assessments/redemption-project/) still
   needs before next week
