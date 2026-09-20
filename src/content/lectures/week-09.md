@@ -1,8 +1,8 @@
 ---
 title: Does It Actually Work?
 description:
-  From designing frustration on paper to measuring whether it survives
-  contact with an actual person
+  Testing whether the frustrating design you built on paper is actually
+  frustrating once a real person tries it
 week: 9
 date: 2027-05-03
 teachers:

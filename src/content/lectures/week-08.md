@@ -1,8 +1,8 @@
 ---
 title: "Bureaucracy: Designing the Impossible"
 description:
-  When the interface isn't a screen at all, but a sequence of rules with a
-  person trapped inside it
+  Sometimes the worst interface isn't a screen at all — it's a form, a
+  queue, and a rule nobody can explain
 week: 8
 date: 2027-04-26
 teachers:

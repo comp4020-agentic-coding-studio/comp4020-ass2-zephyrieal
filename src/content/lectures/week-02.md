@@ -1,8 +1,8 @@
 ---
 title: The User Is Not the Customer
 description:
-  Separating who a system serves from who it merely tolerates, and why "bad"
-  is always bad for somebody in particular
+  Why a system can work great for whoever pays for it and badly for whoever
+  is stuck using it — and why "bad design" always has to name who it's bad for
 week: 2
 date: 2027-03-01
 teachers:

@@ -1,8 +1,8 @@
 ---
 title: The Physical World Is Also a UI
 description:
-  Affordances, doors, and the argument for treating a chair the same way
-  you'd treat a checkout flow
+  Doors, chairs and vending machines have interfaces too, and they can lie
+  to you the same way a checkout button can
 week: 7
 date: 2027-04-19
 teachers:

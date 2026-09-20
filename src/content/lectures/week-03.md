@@ -1,8 +1,8 @@
 ---
 title: Your Brain Is Part of the Interface
 description:
-  Defaults, scarcity, social proof and the rest of the vocabulary for
-  describing what a design is actually doing to you
+  How defaults, fake scarcity and social proof quietly steer decisions you
+  thought you made yourself
 week: 3
 date: 2027-03-08
 teachers:

@@ -1,8 +1,8 @@
 ---
 title: Hate Catalogue
 description:
-  A dataset of bad design, built across the semester's first three weeks and
-  analysed rather than just collected
+  Five examples of design that make people miserable, picked apart until you
+  can say exactly why each one works
 week: 3
 due: 2027-03-08T12:00:00+10:00
 weight: 15
@@ -14,11 +14,15 @@ marking:
     - name: Analytical depth per entry
       weight: 60
 spec:
-  - every entry names a user problem, a likely stakeholder, a suspected
-    intention, and a psychological mechanism
-  - the catalogue covers more than one kind of system (software, physical,
-    bureaucratic)
-  - it is genuinely usable as your own dataset for the rest of the semester
+  - the catalogue contains exactly five entries, each with a photo or
+    screenshot and roughly 150–250 words of analysis
+  - every entry names the user's goal, the specific problem, a likely
+    stakeholder, a suspected reason it might be deliberate, and the
+    mechanism doing the damage
+  - at least two of the five entries come from something you noticed
+    yourself, not an example already circulating online
+  - the catalogue closes with a reflection naming a pattern that shows up
+    more than once across the five entries
 related:
   - sessions/03-make-me-click-it
   - assessments/worst-interface
@@ -26,20 +30,23 @@ related:
 
 ## The brief
 
-> Collect and analyse examples of design that makes people miserable, and
-> explain why each one works.
+> Collect examples of design that makes people miserable, analysed rather
+> than just complained about.
 
-Every entry in your catalogue needs a screenshot or photo, a description, the
-user's problem, a suspected stakeholder, a suspected intention, the
-psychological mechanism at work, and a severity rating. The bar is not
-volume; it's whether a stranger reading your catalogue could see the
-mechanism you saw. A screenshot with a caption is not analysis — "the website
-used a pre-selected default to raise the odds of the expensive option" is.
+Across the Hate Wall, Follow the Incentive and Make Me Click It, you'll have
+gathered more than enough candidates. For this assessment, pick your best
+five — an app, a kiosk, a form, a physical object, or any process you've had
+to sit through — and explain each one properly: what the person was trying
+to do, exactly what got in their way, who plausibly built it or benefits
+from it, why it might be deliberate rather than accidental, and the specific
+mechanism at work. Around 150–250 words per entry is the target: enough to
+show your thinking, not enough to pad it. At least two of your five have to
+come from something you noticed yourself, not an example that's already all
+over the internet.
 
 ## What you submit
 
-Your Hate Catalogue as it stands at the end of week 3: every entry from the
-Hate Wall (week 1), Follow the Incentive (week 2) and Make Me Click It
-(week 3), each carrying the fields above. This becomes the dataset you draw
-on for the rest of the semester, so keep it in a format you'll actually
-reopen in week 5.
+Your five best entries, each with a photo or screenshot and its full
+analysis, plus a short reflection naming a pattern that shows up more than
+once across them. Keep it in a format you'll actually reopen in week 5 —
+this becomes the dataset the rest of the semester draws on.

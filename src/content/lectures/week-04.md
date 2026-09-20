@@ -1,8 +1,8 @@
 ---
 title: The Dark Arts of Interface Design
 description:
-  The named patterns, and why memorising the list is the least useful part of
-  learning it
+  The dark patterns get names so you can spot them — but naming one is the
+  easy part, not the useful part
 week: 4
 date: 2027-03-15
 teachers:

@@ -1,8 +1,8 @@
 ---
 title: The Worst Interface
 description:
-  A deliberately terrible interface, built to produce one specific
-  undesirable behaviour and explained rather than just shown
+  A working interface you make deliberately worse on purpose, with the
+  receipts for exactly why
 week: 6
 due: 2027-03-29T12:00:00+10:00
 weight: 25
@@ -16,11 +16,14 @@ marking:
     - name: Plausibility of the intended effect
       weight: 30
 spec:
-  - the redesign still functions end to end; nothing is actually broken
-  - you name the one specific behaviour you were trying to produce, before
-    describing how
-  - every design decision is tied to a stated mechanism, not just labelled
-    "annoying"
+  - the interaction you redesign is an ordinary one (checkout, booking,
+    subscription, cancellation, or similar) and still works end to end
+  - you name one specific hostile goal before you change anything, and
+    every design decision serves that goal
+  - the 600–800 word write-up explains what you changed, why you expect
+    each change to work, and which course concepts back it up
+  - the original or a neutral baseline is included so a marker can compare
+    it directly against your redesign
 related:
   - sessions/06-friction-lab
   - assessments/hostile-design-experiment
@@ -28,19 +31,23 @@ related:
 
 ## The brief
 
-> Make users do something specific and undesirable — choose the wrong
-> option, take much longer than they need to, or abandon the task — without
-> removing any functionality.
+> Take a simple, ordinary interaction and redesign it to be worse, on
+> purpose, without breaking it.
 
-The goal was never to make something ugly. An effective bad interface can
-look completely normal, even polished; it produces its effect through
-structure, not appearance. Pick one target behaviour before you touch a
-single design decision, then work backwards from it.
+Checkout, sign-up, booking, a subscription, a settings page, a survey, a
+login, a cancellation — pick something ordinary enough that everyone already
+knows how it's supposed to work. Then decide, before you touch anything,
+exactly one behaviour you want to produce: users picking the pricier option
+by accident, or cancelling taking five times longer than subscribing did.
+Every change afterwards should serve that one goal — poor hierarchy, a
+misleading default, an extra step, wording that's technically true and
+practically confusing. None of it counts if the interface stops working;
+deleting the submit button isn't design, it's damage.
 
 ## What you submit
 
-The original interface, your redesigned version, a list of the specific
-design decisions you changed, the behaviour you intended each one to
-produce, and an explanation of the mechanism behind each decision.
-Screenshots or a working prototype are both fine, provided a marker can see
-exactly what changed and why.
+A working prototype of your redesign, the original (or a neutral baseline)
+so a marker can see exactly what changed, and 600–800 words explaining your
+target behaviour, what you changed, why you expect each change to work, and
+which course concepts you're leaning on. Testing it properly comes next
+assessment — for now, the argument just has to be plausible.

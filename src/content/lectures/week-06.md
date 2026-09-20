@@ -1,8 +1,8 @@
 ---
 title: Friction
 description:
-  Useful, accidental, deliberate and destructive friction, and why
-  "difficult" is not one thing
+  Not all friction is the same — some of it protects you, some is an
+  accident, and some is there on purpose
 week: 6
 date: 2027-03-29
 teachers:

@@ -1,8 +1,8 @@
 ---
 title: What Makes You Hate Something?
 description:
-  The opening lecture — why "ugly" and "badly designed" are not the same
-  claim, and what the semester is going to do about that
+  The opening lecture — why looking ugly and working badly are two different
+  problems, and which one this course spends the semester on
 week: 1
 date: 2027-02-22
 teachers:

@@ -1,8 +1,8 @@
 ---
 title: Is Bad Design Actually Bad?
 description:
-  The course's central twist, and the start of the final project's own
-  workshop
+  Some of the bad design you've spent nine weeks mocking turns out to be
+  doing its job on purpose — and now you have to defend it
 week: 10
 date: 2027-05-10
 teachers:

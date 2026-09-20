@@ -1,8 +1,8 @@
 ---
 title: The Worst Design Awards
 description:
-  The semester's closing question, asked again now that you've spent twelve
-  weeks answering it
+  The same question the course opened with, asked one more time now that
+  you actually know how to answer it
 week: 12
 date: 2027-05-24
 teachers:

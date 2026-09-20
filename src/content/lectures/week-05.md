@@ -1,8 +1,8 @@
 ---
 title: Make It Worse
 description:
-  The first major making exercise, and the difference between removing
-  something and making it worse
+  "Your first build: taking something that works and making it
+  deliberately, specifically worse"
 week: 5
 date: 2027-03-22
 teachers:
