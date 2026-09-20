@@ -16,9 +16,11 @@ cover every deliverable.
 course where students learn manipulative design by building it themselves:
 four three-week stages (Observe, Create, Test, Question + Redesign), each
 closing with the assessment it was working toward, and a running through-line
-so no week reads as a standalone topic. The site itself plays along —
-the homepage's "Enter Course" button flees the cursor, in-universe evidence of
-the course's own subject matter, kept inside the platform's accessibility and
+so no week reads as a standalone topic. The site itself plays along — the
+homepage's "Enter Course" button flees the cursor, a confirmshaming dialog
+talks you out of dropping the course, and the policies page's feedback form
+always reports success while sending nothing — in-universe evidence of the
+course's own subject matter, kept inside the platform's accessibility and
 link-checking guarantees rather than actually breaking anything.
 
 ## How I got here
@@ -82,6 +84,37 @@ material to design around rather than lorem-ipsum placeholders
 Deliberately last: a distinctive look designed against real week titles and
 real assessment names holds up better than one designed against filler text
 and then hoping the content fits it later.
+
+A revision pass followed once the whole course existed end to end. Lecture
+and assessment descriptions were reworded away from abstract-sounding phrasing
+toward plainer, more concrete language, and the four assessment briefs were
+rewritten against the actual specifics of the published assignment brief —
+word ranges, participant counts, exact criteria weights — while keeping the
+site's own voice rather than pasting the brief's bullet-point structure
+directly
+([`a623b94`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-zephyrieal/commit/a623b94)).
+The same pass caught a routing mistake — the homepage's "Enter Course" button
+pointed at Sessions instead of Lectures
+([`96bdb04`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-zephyrieal/commit/96bdb04)) —
+and filled out each week's lecture body with the specific mechanisms and
+cross-week callbacks the outline had only gestured at
+([`8706f86`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-zephyrieal/commit/8706f86)),
+removing a leftover explanatory paragraph from the Lectures index once it
+stopped adding anything
+([`dad7766`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-zephyrieal/commit/dad7766)).
+
+> Reword lecture and assessment descriptions in plainer language, then rewrite
+> the four assessment briefs against the published assignment brief's actual
+> specifics without copying its bullet-dump structure.
+
+The site's own dark-pattern gimmick was extended past the fleeing "Enter
+Course" button on the same principle: broken in copy and interaction, never in
+an actual link, contrast ratio, or keyboard path. A confirmshaming "drop the
+course" dialog on the homepage and a feedback form on the policies page that
+always reports success and never sends anything both use native `<dialog>`
+and form semantics so they stay fully keyboard-reachable and announce their
+own state changes to a screen reader
+([`5f3a953`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-zephyrieal/commit/5f3a953)).
 
 I knew the result was right when `pnpm check` — typecheck, build (which runs
 the theme's accessibility checker and link checker), and the vitest spec
